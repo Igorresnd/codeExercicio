@@ -1,0 +1,12 @@
+import java.util.Scanner;
+class Main{
+public static void main(String[]args){
+  Scanner teclado = new Scanner(System.in);
+
+  System.out.println("Digite a sua altura em metros: ");
+  double n1 = teclado.nextDouble();
+
+  double peso = (72.7*n1)-58;
+  System.out.println("O seu peso ideal é de: " + peso + " kilos.");
+}
+}
