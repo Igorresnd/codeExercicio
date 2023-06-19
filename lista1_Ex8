@@ -1,0 +1,19 @@
+import java.util.Scanner;
+class Main{
+public static void main(String[]args){
+ 
+  Scanner t1 = new Scanner (System.in);
+
+  System.out.println ("Digite o valor em real que você recebe por hora no seu trabalho: ");
+  
+    double vh = t1.nextDouble (); // vh = valor hora
+    
+  System.out.println("Agora digite a quantidade de horas que você trabalha em 1 mês: ");
+
+    double ht = t1.nextDouble (); // ht = horas trabalhadas
+  
+    double sm = ht*vh;         // sm= salário mensal
+
+  System.out.println("O valor total do seu salário neste mês será de:  R$" + sm + "." );
+}
+}
