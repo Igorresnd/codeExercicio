@@ -1,0 +1,25 @@
+import java.util.Scanner;
+class Main {
+public static void main (String[]args){
+  Scanner teclado = new Scanner(System.in);
+
+  System.out.println("Digite o primeiro número: ");
+  double n1 = teclado.nextDouble();
+
+  System.out.println("Digite o segundo número:");
+  double n2 = teclado.nextDouble();
+
+  System.out.println("Digite o terceiro número: ");
+  double n3 = teclado.nextDouble();
+  
+  double q1 = (2*n1)*(n2/2);  
+  System.out.println("O produto do dobro do primeiro número com metade do segundo é: " + q1 + ".");
+
+  double q2 = ((3*n1)+n3);
+  System.out.println("A soma do triplo do primeiro número com o terceiro é: " + q2 + ".");
+
+  double q3 = (n3*n3*n3);
+  System.out.println("O terceiro número elevado ao cubo equivale a:" + q3 + ".");
+  
+}
+}
