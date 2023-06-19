@@ -1,0 +1,14 @@
+import java.util.Scanner;
+class Main {
+public static void main(String[]args){
+
+  Scanner teclado = new Scanner (System.in);
+
+  System.out.println ("Digite o valor desejado em graus Celsius para conversão em graus Fahrenheit: ");
+
+  double gc = teclado.nextDouble ();  // gc = graus Celsius
+  double gf = (9*(gc/5)+32);          // gf = graus Fahrenheit
+
+  System.out.println ("O valor inserido equivale a " + gf + " graus Fahrenheit.");
+}
+}
