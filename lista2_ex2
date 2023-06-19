@@ -1,0 +1,20 @@
+import java.util.Scanner;
+class Main{
+  public static void main(String[]args){
+    Scanner teclado = new Scanner (System.in);
+    
+    System.out.println ("Digite um número: ");
+    double numero = teclado.nextDouble();
+  
+    if (numero >0){
+      System.out.println("O número digitado é positivo.");
+    }
+  else if(numero == 0){
+       System.out.println("O número digitado é neutro");
+    }
+    else {
+       System.out.println("O número digitado é negativo");
+    }
+  
+  }
+}
