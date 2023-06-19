@@ -1,0 +1,14 @@
+import java.util.Scanner;
+class Main{
+public static void main(String[]args){
+  Scanner t1 = new Scanner (System.in);
+
+  System.out.println("Digite a temperatura encontrada em Fahrenheit: "); 
+
+  double gf = t1.nextDouble();  // gf = Graus Fahrenheit 
+  double gc = 5*((gf-32)/9);    // gc = Graus Celsius
+
+  System.out.println ("A temperatura" + gf + " graus Fahrenheit equivale a " + gc + " graus Celsius." );
+  
+}
+}
