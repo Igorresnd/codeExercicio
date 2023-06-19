@@ -1,0 +1,11 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+  Scanner teclado = new Scanner(System.in);   
+System.out.println("Insira um valor em metro: ");
+Float valor = teclado.nextFloat();
+  Float conversao = valor*100;
+    System.out.println("O valor informado convertido em centimetros é: "+ conversao + ".");
+
+  }
+}
