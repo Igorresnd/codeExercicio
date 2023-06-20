@@ -1,0 +1,40 @@
+class Main {
+  public static void main(String[] args) {
+    Scanner teclado = new Scanner (System.in);
+if (x &gt; y && x &gt; z) {
+   if (y &gt; z) {
+System.out.println(x);
+System.out.println(y);
+System.out.println(z);
+} 
+   else {
+System.out.println(x);
+System.out.println(z);
+System.out.println(y);
+}
+  } 
+    else if (y &gt; x && y &gt; z) {
+ if (x &gt; z) {
+System.out.println(y);
+System.out.println(x);
+System.out.println(z);
+} 
+    else {
+System.out.println(y);
+System.out.println(z);
+System.out.println(x);
+}
+   } 
+    else {
+  if (x &gt; y) {
+System.out.println(z);
+System.out.println(x);
+System.out.println(y);
+} 
+  else{
+System.out.println(z);
+System.out.println(y);
+System.out.println(x);
+}
+    }
+  }}
