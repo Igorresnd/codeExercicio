@@ -1,0 +1,29 @@
+class Main {
+  public static void main(String[] args)  {
+#include <stdio.h>
+#include <stdlib.h>
+main() {
+    int n;
+    
+    printf("Informe um número inteiro:");
+    scanf("%i",&n);
+    
+    if(n==1){
+        printf("\nO dia da semana correspondente ao número digitado e domingo.");
+    }else if(n==2){
+        printf("\nO dia da semana correspondente ao número digitado e segunda-feira.");
+    }else if(n==3){
+        printf("\nO dia da semana correspondente ao número digitado e terça-feisra.");
+    }else if(n==4){
+        printf("\nO dia da semana correspondente ao número digitado e quarta-feira.");
+    }else if(n==5){
+        printf("\nO dia da semana correspondente ao número digitado e quinta-feira.");
+    }else if(n==6){
+        printf("\nO dia da semana correspondente ao número da semana e sexta-feira.");
+    }else if(n==7){
+    printf("\nO dia da semana correspondente ao número digitado e sábado.");
+    }else{
+        printf("\nValor inválido.");
+    }   
+    
+}}
