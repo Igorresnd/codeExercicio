@@ -1,8 +1,7 @@
-class Main {
-  public static void main(String[] args)  {
 #include <stdio.h>
 #include <stdlib.h>
-main() {
+class Main {
+  public static void main(String[] args)  {
     int n;
     
     printf("Informe um número inteiro:");
