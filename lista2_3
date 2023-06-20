@@ -1,0 +1,19 @@
+import java.util.Scanner;
+class Main{
+  public static void main(String[]args){
+  Scanner teclado = new Scanner (System.in);  
+    
+    System.out.println ("Digite qual é seu sexo ('M' para masculino e 'F' para feminino.) ");
+  String sexo = new String();
+
+  if (sexo == "M"){
+    System.out.println("Sexo confirmado: MASCULINO.");
+  }
+  else if (sexo == "F"){
+    System.out.println("Sexo confirmado: FEMININO.");
+  }
+  else{
+    System.out.println("Opção inválida.");
+  }
+  }
+}
