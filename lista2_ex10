@@ -1,22 +1,19 @@
-class Main {
-  public static void main(String[] args) {
-meta charset="UTF-8"
-
-  var turno = prompt("Em qual turno você estuda ? Digite M para matutino, V para vespertino ou N para noturno");
-
-  if (turno == "M") {
-    alert("Bom dia!");
-  }
-  if (turno == "V") {
-    alert("Boa tarde!");
-  }
-
-  if (turno == "N") {
-    alert("Boa noite!");
-  }
-
-  else {
-    alert("valor inválido");
-  }
-
-  }}
+#include <stdio.h>
+#include <stdlib.h>
+  class Main {
+  public static void main(String[] args)  {
+ char sx;
+    
+    printf("Informe em que turno você estuda:");
+    scanf("%c",&sx);
+    
+    if(sx=='m'||sx=='M'){
+        printf("\nBom dia!");
+    }else if(sx=='v'||sx=='V'){
+        printf("\nBoa tarde!");
+    }else if (sx=='n'||sx=='N'){
+        printf("\nBoa noite!");
+    }else{
+        printf("\nValor inválido!");
+    }
+}}
