@@ -11,32 +11,37 @@ class Main {
     double num3 = teclado.nextDouble();
     
 
-    if (num1>num2 + num1>num3 + num2<num3)
+    if (num1>num2 & num1>num3 & num2<num3)
 {
 System.out.println("O maior número digitado foi: " + num1 ". Já o menor foi:" + num2);
     }
-    if (num1>num2 + num1>num3 + num3<num2)
+    if (num1>num2 & num1>num3 & num3<num2)
 {
 System.out.println("O maior número digitado foi: " + num1 ". Já o menor foi:" + num3);
     }
     
-    else  if (num2>num1 + num2>num3 + num1<num3)
+    else  if (num2>num1 & num2>num3 & num1<num3)
 {
 System.out.println("O maior número digitado foi: " + num2 ". Já o menor foi:" + num1);
 }
 
-    else  if (num2>num1 + num2>num3 + num3<num1)
+    else  if (num2>num1 & num2>num3 & num3<num1)
 {
 System.out.println("O maior número digitado foi: " + num2 ". Já o menor foi:" + num3);
 }
-    else if (num3>num1 + num3>num2 + num1<num2)
+    else if (num3>num1 & num3>num2 & num1<num2)
 {
 System.out.println("O maior número digitado foi: " + num3 ". Já o menor foi:" + num1);
 }
-    else if (num3>num1 + num3>num2 + num2<num1)
+    else if (num3>num1 & num3>num2 & num2<num1)
 {
 System.out.println("O maior número digitado foi: " + num3 ". Já o menor foi:" + num2);
 }
+
+  
+  }
+    }
+
 
   
   }
