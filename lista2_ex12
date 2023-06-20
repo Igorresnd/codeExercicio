@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
+
 class Main {
   public static void main(String[] args)  {
     #include <stdio.h>
