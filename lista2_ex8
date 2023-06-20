@@ -1,0 +1,31 @@
+class Main {
+  public static void main(String[] args) {
+    Scanner teclado = new Scanner (System.in);
+    System.out.println("Olá, digite o preço do primeiro produto: ");
+    double produto1 = teclado.nextDouble();
+    
+    System.out.println("Olá, digite o preço do segundo produto: ");
+    double produto2 = teclado.nextDouble();
+    
+    System.out.println("Olá, digite o preço do terceiro produto: ");
+    double produto3 = teclado.nextDouble();
+    
+
+    if (produto1<produto2 + produto1<produto3 )
+{
+System.out.println("O produto com o preço mais barato é o produto de número 1, cujo preço é: " + produto1 + ".");
+    }
+
+  else if (produto2<produto1 + produto2<produto3 )
+{
+System.out.println("O produto com o preço mais barato é o produto de número 2, cujo preço é: " + produto2 + ".");
+    }
+        
+  else if (produto3<produto1 + produto3<produto2 )
+{
+System.out.println("O produto com o preço mais barato é o produto de número 3, cujo preço é: " + produto3 + ".");
+    }
+
+  
+  }
+    }
