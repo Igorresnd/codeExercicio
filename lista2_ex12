@@ -1,0 +1,79 @@
+#include <stdio.h>
+#include <stdlib.h>
+class Main {
+  public static void main(String[] args)  {
+    #include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+main() {
+   float vh,sb,ir1,i1,i2,i3,i4,i,f,td1,td2,td3,td4,sl1,sl2,sl3,sl4;
+   int qh;
+   
+   printf("Informe a quantidade de horas,por mes, que você trabalha:");
+   scanf("%i",&qh);
+   printf("\nInforme quanto você ganha por hora:");
+   scanf("%f",&vh);
+   
+   sb=qh*vh;
+   
+     if(sb<=900){
+        printf("\nNão há percentual de desconto");
+    }else if(sb<=1500){
+        printf("\nO percentual de desconto é de 5%");
+    }else if(sb<=2500){
+        printf("\nO percentual de desconto é de 10%");
+    }else{
+        printf("\nO percentual de desconto é de 20%");
+    }
+    
+    i2=sb*0.05;
+    i3=sb*0.10;
+    i4=sb*0.20;
+    
+     if(sb<=900){
+        printf("\nNão há desconto do imposto de renda");
+    }else if(sb<=1500){
+        printf("\nO desconto do imposto de renda será de: %.2f",i2);
+    }else if(sb<=2500){
+        printf("\nO desconto do imposto de renda será de: %.2f",i3);
+    }else{
+        printf("\nO desconto do imposto de renda será de: %.2f",i4);
+    }
+    
+    i=sb*0.10;
+    printf("\nO valor a ser pago para o inss é de: %.2f",i);
+    
+    f= sb*0.11;
+    printf("\nO valor a  ser depositado pela empresa será de: %.2f",f);
+    
+    td1=i;
+    td2=i2+i;
+    td3=i3+i;
+    td4=i4+i;
+    
+    if(sb<=900){
+        printf("\nO total de descontos é de: %.2f",td1);
+    }else if(sb<=1500){
+        printf("\nO total de descontos é de : %.2f",td2);
+    }else if(sb<=2500){
+        printf("\nO total de descontos é de: %.2f",td3);
+    }else{
+        printf("\nO total de descontos é de: %.2f",td4);
+    } 
+    
+    sl1=sb-td1+f;
+    sl2=sb-td2+f;
+    sl3=sb-td3+f;
+    sl4=sb-td4+f;
+    
+    if(sb<=900){
+        printf("\nSeu salário líquido é de : %.2f",sl1);
+    }else if(sb<=1500){
+        printf("\nSeu salário líquido é de: %.2f",sl2);
+    }else if(sb<=2500){
+        printf("\nSeu salário líquido é de: %.2f",sl3);
+    }else{
+        printf("\nSeu salário líquido é de: %.2f",sl4);
+    }     
+    
+}}
