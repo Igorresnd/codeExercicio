@@ -1,10 +1,7 @@
-
-class Main {
-  public static void main(String[] args)  {
-    #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-main() {
+class Main {
+  public static void main(String[] args)  {
    float vh,sb,ir1,i1,i2,i3,i4,i,f,td1,td2,td3,td4,sl1,sl2,sl3,sl4;
    int qh;
    
