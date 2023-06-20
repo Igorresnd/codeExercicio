@@ -1,0 +1,43 @@
+#include <stdio.h>
+#include <stdlib.h>
+  class Main {
+  public static void main(String[] args)  {
+  
+int dd, mm, aa;
+    printf("Digite uma data no formato dd/mm/aaaa: ");
+    scanf("%i/%i/%i", &dd, &mm, &aa); 
+
+       //checando o ano
+       
+    if (aa >= 1900 && aa <= 9999)
+    {
+          //checando o mes
+          
+        if (mm >= 1 && mm <= 12)
+        {
+             //checando o dia
+             
+            if ((dd >= 1 && dd <= 31) && (mm == 1 || mm == 3 || mm == 5 || mm == 7 || mm == 8 || mm == 10 || mm == 12))
+                printf("\nEssa data eh valida!\n");
+                
+            else if ((dd >= 1 && dd <= 30) && (mm == 4 || mm == 6 || mm == 9 || mm == 11))
+                printf("\nEssa data eh valida!\n");
+                
+            else if ((dd >= 1 && dd <= 28) && (mm == 2))
+                printf("\nEssa data eh valida!\n");
+                
+            else if (dd == 29 && mm == 2 && (aa % 400 == 0 || (aa % 4 == 0 && aa % 100 != 0)))
+                printf("\nEssa data eh valida!.\n");
+                
+            else
+                printf("\nEsse dia eh invalido!\n");
+        }
+        else
+        {
+            printf("\nEsse mes nao eh valido!\n");
+        }
+    }
+    else{
+        printf("\nEssa data nao é valida!\n");
+    }
+}}
