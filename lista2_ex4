@@ -1,0 +1,52 @@
+class Main {
+  public static void main(String[] args) {
+    System.out.println("Olá, digite uma letra e vamos descobrir se a letra é vogal ou consoante ?");
+    String letra = new String();
+
+    if ( letra == "a")
+{
+System.out.println("A letra digitada é vogal! ");
+    }
+    else  if ( letra == "A")
+{
+System.out.println("A letra digitada é vogal! ");
+    }
+     else  if ( letra == "e")
+{
+System.out.println("A letra digitada é vogal! ");
+    } 
+       else  if ( letra == "E")
+{
+System.out.println("A letra digitada é vogal! ");
+    }
+         else  if ( letra == "i")
+{
+System.out.println("A letra digitada é vogal! ");
+    }
+      else  if ( letra == "I")
+{
+System.out.println("A letra digitada é vogal! ");
+    }
+      else  if ( letra == "o")
+{
+System.out.println("A letra digitada é vogal! ");
+    }        
+      else  if ( letra == "O")
+{
+System.out.println("A letra digitada é vogal! ");
+    }
+      else  if ( letra == "u")
+{
+System.out.println("A letra digitada é vogal! ");
+    }  
+      else  if ( letra == "U")
+{
+System.out.println("A letra digitada é vogal! ");
+    }  
+   else 
+    {
+      System.out.println("A letra digitada é consoante! ");
+   }
+    
+  }
+}
