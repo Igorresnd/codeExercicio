@@ -1,0 +1,17 @@
+public class Bola{
+private String cor;
+private int circunferencia;
+private String material; 
+
+  
+   public Bola(String cor, int circunferencia, String material) super(); 
+this.cor = cor; 
+this.circunferencia = circunferencia; 
+this.material = material; 
+
+   public void trocacor(string cor) this.cor = cor; 
+   public String mostracor() return this.cor; 
+   public static void main(string[] args) 
+
+  Bola b = new Bola("azul", 10, "couro"); System.out.println(b.mostraCor()); b.trocacor("vermelha"); System.out.println(b.mostraCor());
+  }
