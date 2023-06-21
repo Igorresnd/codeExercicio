@@ -1,0 +1,78 @@
+#include <stdio.h>
+#include <stdlib.h>
+  class Main {
+  public static void main(String[] args)  {
+  
+char opcao, tipocarne,formapag,tipopag;
+	float qtdcarne,valorcompra,desconto,precofinal;
+	
+	printf("\nO Hipermercado Tabajara esta com uma promocao de carnes!!");
+	printf ("\nConfira!!");
+	
+	printf("\n\nAte 5 Kg    Acima de 5 Kg");
+	printf("\nFile Duplo R$ 4,90    por   Kg R$ 5,80 por Kg");
+    printf("\nAlcatra R$ 5,90       por   Kg R$ 6,80 por Kg");  
+    printf("\nPicanha R$ 6,90       por   Kg R$ 7,80 por Kg"); 
+    
+    
+    printf ("\n\nDIGITE 1 - PARA FILE DUPLO");
+    printf ("\nDIGITE 2 - PARA ALCATRA");
+    printf ("\nDIGITE 3 - PARA PICANHA");
+    printf("\n\nQual o tipo de carne escolhida?");
+    scanf("%c", &opcao);
+    
+	 if (opcao == 1){
+	 	printf("Qual eh a quantidade desejada?:  ");
+	 	scanf("%f", &qtdcarne);
+	 	
+	 	if(qtdcarne >=5){
+	 		valorcompra = qtdcarne * 5.8;
+		 }else{
+		 	valorcompra= qtdcarne * 4.9;
+		 }
+	 }else if (opcao == 2){
+	 	printf("Qual eh a quantidade desejada?:  ");
+	 	scanf("%f", &qtdcarne);
+	 	
+	 	if(qtdcarne >=5){
+	 		valorcompra = qtdcarne * 6.8;
+		 }else{
+		 	valorcompra= qtdcarne * 5.9;
+		 }
+		 
+		 }else if (opcao == 3){
+		printf("Qual eh a quantidade desejada?:  ");
+	 	scanf("%f", &qtdcarne);
+		 	
+		if(qtdcarne >=5){
+	 	    valorcompra = qtdcarne * 7.8;
+		}else{
+		 	valorcompra= qtdcarne * 6.9;
+		 }
+		 	
+		 }else {
+		 printf("OPCAO INVALIDA!! VOCE DEVE ESCOLHER ENTRE 1 E 3!");
+		 }
+		 
+		 printf("\n\n2 - CARTAO DE CREDITO");
+		 printf ("QUALQUER OUTRA TECLA - PAGAMENTO A VISTA");
+		 printf("\n\nQual a forma de pagamento?");
+		 scanf ("%c", &formapag);
+		 
+		 if (formapag == 2){ 
+		 desconto = valorcompra * 0.05;
+		 precofinal = valorcompra - desconto;
+		 
+		 }else
+		 precofinal = valorcompra;
+		
+		 system ("clear");
+		 
+		 printf("\nææææææææææ HIPERMERCADO TABAJARA ææææææææææ");
+		 printf("\nTIPO DE CARNE:  ",tipocarne);
+		 printf("\nA QUANTIDADE COMPRADA EH:   %.2f KG",qtdcarne);
+		 printf (" VALOR TOTAL EH DE R$:  %.2f",valorcompra);
+		 printf("\nA FORMA DE PAGAMENTO EH:  ",tipopag);
+		 printf("\nO VALOR DO DESCONTO EH DE R$:  ",desconto);		 
+		 printf("\nO VALOR A PAGAR EH DE R$:  ",precofinal);
+}}
