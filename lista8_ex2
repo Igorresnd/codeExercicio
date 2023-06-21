@@ -1,0 +1,11 @@
+public Quadrado(float lado){
+
+setlado(lado); 
+public void setlado(float lado){
+  this.lado = lado;
+  public float getlado() return lado; 
+  public float area() return this.lado * this.lado; 
+  public static void main(string[] args) Quadrado q = new Quadrado(5); 
+System.out.println(q.area());
+
+}}
